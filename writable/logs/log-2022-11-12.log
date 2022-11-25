@@ -1,0 +1,84 @@
+CRITICAL - 2022-11-12 00:32:19 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:32:30 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:33:52 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:34:08 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:35:14 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:35:30 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:35:34 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:35:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH/Controllers/Home.php on line 29.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:36:15 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:36:31 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:36:34 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 00:37:11 --> Too few arguments to function App\Controllers\Home::get_masters_by_service(), 0 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_by_service()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

@@ -1,0 +1,338 @@
+CRITICAL - 2022-11-21 00:00:05 --> Undefined variable $uilder
+in APPPATH/Controllers/Home.php on line 57.
+ 1 APPPATH/Controllers/Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $uilder', 'APPPATH/Controllers/Home.php', 57)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 00:00:20 --> Undefined variable $db
+in APPPATH/Controllers/Home.php on line 58.
+ 1 APPPATH/Controllers/Home.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH/Controllers/Home.php', 58)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 00:09:40 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+in APPPATH/Controllers/Home.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-21 00:20:40 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(61): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#10 {main}
+CRITICAL - 2022-11-21 00:20:40 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = 9', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = 9')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = 9')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-21 00:22:15 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#10 {main}
+CRITICAL - 2022-11-21 00:22:15 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 06:44:17 --> Undefined variable $appName
+in APPPATH/Controllers/Home.php on line 16.
+ 1 APPPATH/Controllers/Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appName', 'APPPATH/Controllers/Home.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 06:44:51 --> Undefined variable $appName
+in APPPATH/Controllers/Home.php on line 16.
+ 1 APPPATH/Controllers/Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appName', 'APPPATH/Controllers/Home.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 06:44:52 --> Undefined variable $appName
+in APPPATH/Controllers/Home.php on line 16.
+ 1 APPPATH/Controllers/Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appName', 'APPPATH/Controllers/Home.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 06:44:52 --> Undefined variable $appName
+in APPPATH/Controllers/Home.php on line 16.
+ 1 APPPATH/Controllers/Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appName', 'APPPATH/Controllers/Home.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 06:47:17 --> Undefined variable $appName
+in APPPATH/Controllers/Home.php on line 17.
+ 1 APPPATH/Controllers/Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appName', 'APPPATH/Controllers/Home.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 06:47:18 --> Undefined variable $appName
+in APPPATH/Controllers/Home.php on line 17.
+ 1 APPPATH/Controllers/Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appName', 'APPPATH/Controllers/Home.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 06:47:19 --> Undefined variable $appName
+in APPPATH/Controllers/Home.php on line 17.
+ 1 APPPATH/Controllers/Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appName', 'APPPATH/Controllers/Home.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-21 13:21:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-21 13:21:48 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 AUTH PLAIN LOGIN
+
+from: 250 2.1.0 Ok
+
+to: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+The following SMTP error was encountered: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2022-11-21 13:21:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-21 13:21:55 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 AUTH PLAIN LOGIN
+
+from: 250 2.1.0 Ok
+
+to: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+The following SMTP error was encountered: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2022-11-21 13:22:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-21 13:22:03 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 AUTH PLAIN LOGIN
+
+from: 250 2.1.0 Ok
+
+to: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+The following SMTP error was encountered: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2022-11-21 13:22:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-21 13:22:24 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 AUTH PLAIN LOGIN
+
+from: 250 2.1.0 Ok
+
+to: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+The following SMTP error was encountered: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+quit: 221 2.0.0 Bye
+
+ERROR - 2022-11-21 13:22:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-21 13:22:30 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 AUTH PLAIN LOGIN
+
+from: 250 2.1.0 Ok
+
+to: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+The following SMTP error was encountered: 556 5.1.10 <someone@example.com>: Recipient address rejected: Domain example.com does not accept mail (nullMX)
+
+quit: 221 2.0.0 Bye
+
+CRITICAL - 2022-11-21 13:25:33 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 93.
+ 1 APPPATH/Controllers/Home.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 93)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->notify_email([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 13:25:40 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 93.
+ 1 APPPATH/Controllers/Home.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH/Controllers/Home.php', 93)
+ 2 APPPATH/Controllers/Home.php(69): App\Controllers\Home->notify_email([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 13:28:05 --> Call to undefined method CodeIgniter\Email\Email::message()
+in APPPATH/Controllers/Home.php on line 94.
+ 1 APPPATH/Controllers/Home.php(69): App\Controllers\Home->notify_email([...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 13:35:15 --> Undefined variable $service_date
+in APPPATH/Views/email.php on line 25.
+ 1 APPPATH/Views/email.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service_date', 'APPPATH/Views/email.php', 25)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('email.php', [], true)
+ 5 APPPATH/Controllers/Home.php(93): view('email.php', [...])
+ 6 APPPATH/Controllers/Home.php(69): App\Controllers\Home->notify_email([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-21 13:40:39 --> Undefined variable $title
+in APPPATH/Views/email.php on line 26.
+ 1 APPPATH/Views/email.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH/Views/email.php', 26)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('email.php', [], true)
+ 5 APPPATH/Controllers/Home.php(93): view('email.php', [...])
+ 6 APPPATH/Controllers/Home.php(69): App\Controllers\Home->notify_email([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

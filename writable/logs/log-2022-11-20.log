@@ -1,0 +1,16 @@
+CRITICAL - 2022-11-20 13:00:44 --> Undefined variable $request
+in APPPATH/Controllers/Home.php on line 48.
+ 1 APPPATH/Controllers/Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH/Controllers/Home.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-20 23:59:20 --> Undefined variable $request
+in APPPATH/Controllers/Home.php on line 48.
+ 1 APPPATH/Controllers/Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH/Controllers/Home.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
