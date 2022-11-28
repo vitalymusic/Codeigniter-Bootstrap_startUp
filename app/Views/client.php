@@ -66,7 +66,7 @@
                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             </div>
             <div class="form-group text-center mt-5 mb-5">
-                    <button type="submit" class="btn btn-outline-primary ">Pieteikties pakalpojumam</button>
+                    <button type="submit" class="btn btn-primary ">Pieteikties pakalpojumam</button>
             </div>
             </div>
         </div>

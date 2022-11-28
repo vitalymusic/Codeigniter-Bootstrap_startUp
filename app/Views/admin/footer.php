@@ -46,6 +46,6 @@
 
 
 
-<?php include("scripts.php");?>
+<?php include("admin_scripts.php");?>
 </body>
 </html>

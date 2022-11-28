@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Admin extends BaseController
 
 {
 
@@ -27,7 +27,7 @@ class Home extends BaseController
         $data = [
             "title" =>$this->appName
         ];
-        return view('client',$data);
+        return view('admin/main_page',$data);
     }
 
 
