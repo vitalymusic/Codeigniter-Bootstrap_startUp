@@ -24,11 +24,33 @@ class Admin extends BaseController
     }
     public function index()
     {
+        $builder = $this->db->table('pieteikumi');
+        $builder->join('meistari', 'meistari.id = pieteikumi.meistara_id');
+        $builder->join('pakalpojumi', 'pakalpojumi.id = pieteikumi.pakalpojuma_id');
+        $query   = $builder->orderBy('`timestamp`', 'DESC')->get();
         $data = [
-            "title" =>$this->appName
+            "active_menu"=>1,
+            "subtitle"=>"Pieteikumu saraksts",
+            "title" =>$this->appName,
+            "pasutijumi"=>$query->getResultArray()
         ];
         return view('admin/main_page',$data);
     }
+
+
+    public function users(){
+        $builder = $this->db->table('meistari');
+        $builder->join('pakalpojumi', 'pakalpojumi.id = meistari.pakalpojuma_id');     
+        $query   = $builder->get();
+        $data = [
+            "active_menu"=>2,
+            "subtitle"=>"Meistaru saraksts",
+            "title" =>$this->appName,
+            "meistari"=>$query->getResultArray()
+        ];
+        return view('admin/masters_page',$data);
+    }
+    
 
 
     public function get_services(){

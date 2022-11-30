@@ -1,5 +1,5 @@
 <?php include "header.php"?>
-<div class="container">
+<div class="container main_screen">
     <h1 class="text-center my-3"><?=$title?></h1>
     <form id="Pieteikuma_forma1">
     <div class="row">
@@ -48,22 +48,30 @@
             <div class="form-group mt-2">
                 <label for="client_name">Jūsu vārds</label>
                 <input type="text" class="form-control" id="client_name" name="client_name" placeholder="Jūsu vārds">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                <div class="invalid-feedback">
+                     Šis lauks ir jāaizpilda
+                </div>
             </div>
             <div class="form-group mt-2">
                 <label for="client_surname">Jūsu uzvārds</label>
                 <input type="text" class="form-control" id="client_surname" name="client_surname" placeholder="Jūsu uzvārds">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                <div class="invalid-feedback">
+                     Šis lauks ir jāaizpilda
+                </div>
             </div>
             <div class="form-group mt-2">
                 <label for="client_phone">Jūsu tālrunis</label>
                 <input type="phone" class="form-control" id="client_phone" name="client_phone" placeholder="Jūsu tālrunis">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                <div class="invalid-feedback">
+                     Šis lauks ir jāaizpilda
+                </div>
             </div>
             <div class="form-group mt-2">
                 <label for="client_email">Jūsu epasts</label>
                 <input type="phone" class="form-control" id="client_email" name="client_email" placeholder="Jūsu epasts">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                <div class="invalid-feedback">
+                     Šis lauks ir jāaizpilda
+                </div>
             </div>
             <div class="form-group text-center mt-5 mb-5">
                     <button type="submit" class="btn btn-primary ">Pieteikties pakalpojumam</button>

@@ -7,7 +7,7 @@ class Home extends BaseController
 {
 
     function __construct(){
-        $this->appName = "RSMT pakalpojumu sistēma";
+        $this->appName = "RSMT pakalpojumu pieteikšanas lapa";
         $this->db = \Config\Database::connect();
         $this->email = \Config\Services::email();
         $config['protocol'] = 'smtp';

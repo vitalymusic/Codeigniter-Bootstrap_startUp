@@ -108,7 +108,42 @@
             })
 
             $('button[type="submit"]').click(function(e){
+                    formError = false;
                     e.preventDefault();
+                    // Check Form Data
+                    if($('input[name="client_name"]').val()==""){
+                        $('input[name="client_name"]').addClass('is-invalid');
+                        formError = true;
+
+                    }else{
+                        $('input[name="client_name"]').removeClass('is-invalid');
+                        formError = false;
+                    }
+                    if($('input[name="client_surname"]').val()==""){
+                        $('input[name="client_surname"]').addClass('is-invalid');
+                        formError = true;
+                    }else{
+                        $('input[name="client_surname"]').removeClass('is-invalid');
+                        formError = false;
+                    }
+                    if($('input[name="client_phone"]').val()==""){
+                        $('input[name="client_phone"]').addClass('is-invalid');
+                        formError = true;    
+                    }else{
+                        $('input[name="client_phone"]').removeClass('is-invalid');
+                        formError = false;
+                    }
+                    if($('input[name="client_email"]').val()==""){
+                        $('input[name="client_email"]').addClass('is-invalid');
+                        formError = true;
+                    }else{
+                        $('input[name="client_email"]').removeClass('is-invalid');
+                        formError = false;
+                    }
+
+                    if(formError == false){
+
+                    
                     $('button[type="submit"]').append(`
                     <div class="spinner-border text-light spinner-border-sm mx-1" role="status">
                         <span class="visually-hidden">Loading...</span>
@@ -136,6 +171,7 @@
                         `);
                         console.log(data);
                     })
+                }
             })
 
     })
