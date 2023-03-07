@@ -38,11 +38,24 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/users', 'Admin::users');
+$routes->get('/admin/services', 'Admin::services');
+$routes->get('/admin/create_user', 'Admin::create_user');
+$routes->get('/admin/edit_user/(:num)', 'Admin::edit_user/$1');
+$routes->get('/admin/delete_user/(:num)', 'Admin::delete_user/$1');
+$routes->get('/admin/set_password/(:num)', 'Admin::setPassword_user/$1');
+
+$routes->post('/admin/save_user', 'Admin::save_user');
+$routes->get('/login', 'Admin::login');
+$routes->get('/logout', 'Admin::logout');
+$routes->get('/logout', 'Admin::logout');
 
 $routes->get('/get_services', 'Home::get_services');
-$routes->get('/get_masters/(:any)/(:any)', 'Home::get_masters/$1/$2');
+$routes->get('/get_places', 'Home::get_places');
+$routes->get('/get_masters/(:any)/(:any)/(:any)', 'Home::get_masters/$1/$2/$3');
 $routes->get('/get_masters_time/(:any)', 'Home::get_masters_time/$1');
 $routes->post('/putApplication', 'Home::putApplication');
+$routes->post('/authorize', 'Admin::authorize');
+
 $routes->get('/deleteApp/(:any)', 'Home::deleteApp/$1');
 
 

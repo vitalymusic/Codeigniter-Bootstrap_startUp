@@ -1,0 +1,124 @@
+CRITICAL - 2023-01-24 22:55:06 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH/Debug/Exceptions.php on line 177.
+ 1 SYSTEMPATH/Debug/Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'Creation of dynamic property App\\Controllers\\Home::$appName is deprecated', 'APPPATH/Controllers/Home.php', 10)
+ 2 APPPATH/Controllers/Home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Home::$appName is deprecated', 'APPPATH/Controllers/Home.php', 10)
+ 3 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 22:55:35 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH/Debug/Exceptions.php on line 177.
+ 1 SYSTEMPATH/Debug/Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'Creation of dynamic property App\\Controllers\\Home::$appName is deprecated', 'APPPATH/Controllers/Home.php', 10)
+ 2 APPPATH/Controllers/Home.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\Home::$appName is deprecated', 'APPPATH/Controllers/Home.php', 10)
+ 3 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 22:55:53 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'rsmt_pakalpojum...', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-24 22:55:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 3 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 22:56:03 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'rsmt_pakalpojum...', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-24 22:56:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 3 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-24 22:56:09 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'rsmt_pakalpojum...', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-24 22:56:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 3 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

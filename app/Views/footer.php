@@ -5,7 +5,7 @@
     
     <!-- Left -->
         <div class="me-5 d-block d-lg-block">
-          <span>Mēs sociālajās vietnēs:</span>
+          <span class="rsmt_red">Mēs sociālajās vietnēs:</span>
         </div>
       </div>
       
@@ -49,7 +49,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2022
+    © <?php echo date("Y"); ?>
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Rīgas Stila un Modes tehnikums</a>
   </div>
   <!-- Copyright -->

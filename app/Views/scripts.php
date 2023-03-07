@@ -6,11 +6,11 @@
 <script>
     $(document).ready(()=>{
         select1 = $("select[name='service_select']");
-        select2 = $("select[name='master_select']");
+        select2 = $("select[name='address_select']");
         select3 = $("input[name='service_date']"); 
-        select4 = $("select[name='time_select']"); 
+        select4 = $("select[name='master_select']"); 
         $('.clientForm').hide();
-        select2.attr("disabled",true);
+        // select2.attr("disabled",true);
         select3.attr("disabled",true);
         select4.attr("disabled",true);
 
@@ -28,37 +28,49 @@
                     `);
                 }
             })
+            $.get("get_places", function(data){
+                select2.empty();
+                select2.append(`<option value="">Atveriet lai izvēlētos</option>`);
+                for (x in data){
+                    select2.append(`
+                        <option value="${data[x].id}">Salons - "${data[x].nosaukums}" ${data[x].adrese}</option>
+                    `);
+                }
+            })
         
             select1.change(function(e){
                 if($(this).val()){
-                    select3.attr("disabled",false);
+                    select2.attr("disabled",false);
                     $('.step2').show();
 
                 }else{
-                    select3.attr("disabled",true);
-                    $('.step2').hide();
+                    select2.attr("disabled",true);
+
+                    $('.step2,.step3,.step4, .clientForm').hide();
                 }
             }) 
+
 
            
             select3.change(function(e){
                 serviceDate = $(this).val();
                 date = new Date(serviceDate);
-                weekDay = date.getDay();
-                //console.log(weekDay);
-                $.get(`get_masters/${select1.val()}/${weekDay}`, function(data){
+                weekDay = (date.getDay()==0)? "7": date.getDay();
+                
+                $.get(`get_masters/${select1.val()}/${select2.val()}/${weekDay}`, function(data){
+                    // console.log(data);
                 if(data.length != 0){
-                select2.empty();
-                select2.append(`<option value="">Atveriet lai izvēlētos</option>`);
+                select4.empty();
+                select4.append(`<option value="">Atveriet lai izvēlētos</option>`);
 
                 for (x in data){
-                    select2.append(`
+                    select4.append(`
                         <option value="${data[x].id}">${data[x].meistara_vards} ${data[x].meistara_uzvards}</option>
                     `);
                 }
             }else{
-                select2.empty();
-                select2.append(`
+                select4.empty();
+                select4.append(`
                     <option>Šajā datumā neviens nepieņem</option>
                 `);  
             }
@@ -73,32 +85,30 @@
                 }
 
             })
-
-
-            select2.change(function(e){
-                $.get(`get_masters_time/${$(this).val()}`, function(data){
-                    console.log(data);
-                    if(data){
-                        time = data[0].pieejamas_stundas.split(',');
-                        select4.empty();
-                        select4.append(`<option value="">Izvēlieties laiku</option>`);
-                        for(y in time){
-                            select4.append(`
-                                <option value="${time[y]}">${time[y]}:00</option>  
-                            `);
+            select2.change(function(e){ 
+                if($(this).val()){
+                            select3.attr("disabled",false);
+                            $('.step3').show();
+                        }else{
+                            select3.attr("disabled",true);
+                            $('.step3').hide();
                         }
-                        
+            })
+
+
+            select3.change(function(e){ 
                         //console.log(time);
-                    }
-                })
+                    
+               
                 if($(this).val()){
                             select4.attr("disabled",false);
                             $('.step4').show();
                         }else{
-                            select4.attr("disabled",true);
+                            select3.attr("disabled",true);
                             $('.step4').hide();
                         }
             })
+
             select4.change(function(){
                 if($(this).val()){
                     $('.clientForm').fadeIn();
@@ -159,17 +169,20 @@
                                 <div class="container">
                                     <p class="fw-bold">Pieteikuma detaļas:</p>
                                     <p>Pakalpojuma datums: <b>${data[0].datums}</b><p>
-                                    <p>Pakalpojuma laiks: <b>${data[0].laiks}:00</b><p>
-                                    <p>Pakalpojuma adrese: <b>${data[0].adrese}</b><p>
+                                    <p>Pakalpojuma adrese: <b>Frizētava "${data[0].nosaukums}" ${data[0].adrese}</b><p>
                                     <p>Pakalpojuma meistare: <b>${data[0].meistara_vards} ${data[0].meistara_uzvards}</b><p>
-                                    <p>Piefiksējiet pieteikuma detaļas!</p>
+                                    <p>Pakalpojuma nosaukums: <b>${data[0].pakalpojums}</b><p>
+                                    <p >
+                                        ${data[0].google_maps} 
+                                    </p>
+                                    <p>Paldies par pieteikumu. Pakalpojuma laiku saskaņos mūsu administrātors</p>
                                     <div class="text-center">
-                                        <button class="btn btn-primary" onclick="location.reload();">Aizvērt logu</button>
+                                        <button class="btn btn-danger" onclick="location.reload();">Aizvērt logu</button>
                                     </div>
                                 </div>
 
                         `);
-                        console.log(data);
+                        // console.log(data);
                     })
                 }
             })

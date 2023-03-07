@@ -1,0 +1,13 @@
+CRITICAL - 2023-02-17 09:01:25 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH/Views/admin/top_nav.php on line 12.
+ 1 APPPATH/Views/admin/top_nav.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH/Views/admin/top_nav.php', 12, [...])
+ 2 APPPATH/Views/admin/header.php(51): include('APPPATH/Views/admin/top_nav.php')
+ 3 APPPATH/Views/admin/main_page.php(1): include('APPPATH/Views/admin/header.php')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/main_page.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main_page', [], true)
+ 7 APPPATH/Controllers/Admin.php(56): view('admin/main_page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

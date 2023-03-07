@@ -1,0 +1,2166 @@
+ERROR - 2023-02-23 09:05:26 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:05:26 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:05:29 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:05:29 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:05:31 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:05:31 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:05:32 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:05:32 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:05:36 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:05:36 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:06:26 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:06:26 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:07:19 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:07:19 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:07:43 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:07:43 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:09:03 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:09:03 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:09:07 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:09:07 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:09:11 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:09:11 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:09:34 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:09:34 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:10:40 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:10:40 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:10:47 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:10:47 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:10:49 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:10:49 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:11:07 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:11:07 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:11:09 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:11:09 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:12:36 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:12:36 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:13:05 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:13:05 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:14:40 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:14:40 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:14:44 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:14:44 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:14:46 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:14:46 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:14:47 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:14:47 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:14:49 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:14:49 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:14:51 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:14:51 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:14:52 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:14:52 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:15:08 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:15:08 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:15:10 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:15:10 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:43:51 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:43:51 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:44:00 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:44:00 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 09:44:01 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 09:44:01 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:00:26 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:00:26 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:00:28 --> mysqli_sql_exception: Unknown column 'pieejamas_stundas' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejam...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejam...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejam...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejam...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:00:28 --> Unknown column 'pieejamas_stundas' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pieejamas_stundas`
+FROM `meistari`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters_time('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:05:06 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:05:06 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:05:25 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:05:25 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:05:46 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:05:46 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:05:57 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '5')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:05:57 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:06:02 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:06:02 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:09:35 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:09:35 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%3%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%3%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%3%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:09:45 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:09:45 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:09:48 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '4')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:09:48 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%4%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%4%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%4%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '4')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:10:37 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:10:37 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:10:46 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:10:46 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:10:50 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '5')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:10:50 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:10:57 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:10:57 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:00 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '3')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:00 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%3%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%3%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%3%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '3')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:02 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '6')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:02 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%6%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%6%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%6%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '6')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:08 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '5')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:08 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%5%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:11 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '0')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:11 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '0')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:16 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '0')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:16 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '0')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:21 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:21 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:25 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '6')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:25 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%6%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%6%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%6%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '6')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:29 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '0')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:29 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%0%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '0')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:11:32 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:11:32 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'3\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('3', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:12:39 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '7')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:12:39 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%7%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%7%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%7%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '7')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:12:44 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '1')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:12:44 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%1%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:12:47 --> mysqli_sql_exception: Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 10:12:47 --> Unknown column 'maistari_pakalpojumi.Pakalpojumi_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = \'1\'
+AND  `meistari`.`pieejamas_dienas` LIKE \'%2%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meistari_pakalpojumi`
+LEFT JOIN `meistari` ON `meistari_pakalpojumi`.`meistars_id` = `meistari`.`id`
+WHERE `maistari_pakalpojumi`.`Pakalpojumi_id` = :maistari_pakalpojumi.Pakalpojumi_id:
+AND  `meistari`.`pieejamas_dienas` LIKE :meistari.pieejamas_dienas: ESCAPE \'!\'', [...], false)
+ 5 APPPATH/Controllers/Home.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 10:17:03 --> Too few arguments to function App\Controllers\Home::get_masters(), 2 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 3 expected
+in APPPATH/Controllers/Home.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 10:17:15 --> Too few arguments to function App\Controllers\Home::get_masters(), 2 passed in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php on line 927 and exactly 3 expected
+in APPPATH/Controllers/Home.php on line 48.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_masters('1', '2')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 12:14:45 --> mysqli_sql_exception: Column 'laiks' cannot be null in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pi...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pi...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pi...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pi...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(81): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 12:14:45 --> Column 'laiks' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (\'Vitālijs\', \'Korabeļlņikovs\', \'765765\', \'vitaly.music@inbox.lv\', \'1\', \'9\', NULL, \'2023-02-21\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (\'Vitālijs\', \'Korabeļlņikovs\', \'765765\', \'vitaly.music@inbox.lv\', \'1\', \'9\', NULL, \'2023-02-21\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (\'Vitālijs\', \'Korabeļlņikovs\', \'765765\', \'vitaly.music@inbox.lv\', \'1\', \'9\', NULL, \'2023-02-21\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (:klienta_vards:, :klienta_uzvards:, :klienta_talrunis:, :klienta_epasts:, :pakalpojuma_id:, :meistara_id:, :laiks:, :datums:)', [...], false)
+ 5 APPPATH/Controllers/Home.php(81): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 12:15:09 --> mysqli_sql_exception: Column 'laiks' cannot be null in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pi...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pi...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pi...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pi...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(81): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 12:15:09 --> Column 'laiks' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (\'Vitālijs\', \'Korabeļlņikovs\', \'765765\', \'vitaly.music@inbox.lv\', \'1\', \'9\', NULL, \'2023-02-21\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (\'Vitālijs\', \'Korabeļlņikovs\', \'765765\', \'vitaly.music@inbox.lv\', \'1\', \'9\', NULL, \'2023-02-21\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (\'Vitālijs\', \'Korabeļlņikovs\', \'765765\', \'vitaly.music@inbox.lv\', \'1\', \'9\', NULL, \'2023-02-21\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pieteikumi` (`klienta_vards`, `klienta_uzvards`, `klienta_talrunis`, `klienta_epasts`, `pakalpojuma_id`, `meistara_id`, `laiks`, `datums`) VALUES (:klienta_vards:, :klienta_uzvards:, :klienta_talrunis:, :klienta_epasts:, :pakalpojuma_id:, :meistara_id:, :laiks:, :datums:)', [...], false)
+ 5 APPPATH/Controllers/Home.php(81): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:19:42 --> Undefined offset: 0
+in APPPATH/Controllers/Home.php on line 88.
+ 1 APPPATH/Controllers/Home.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/Home.php', 88, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 14:00:51 --> Undefined variable: laiks
+in APPPATH/Views/master_email.php on line 39.
+ 1 APPPATH/Views/master_email.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: laiks', 'APPPATH/Views/master_email.php', 39, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/master_email.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('master_email.php', [], true)
+ 5 APPPATH/Controllers/Home.php(115): view('master_email.php', [...])
+ 6 APPPATH/Controllers/Home.php(90): App\Controllers\Home->notify_master_email([...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 14:08:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-23 14:08:28 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-23 14:08:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-23 14:08:33 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 
+CRITICAL - 2023-02-23 14:09:46 --> Undefined index: laiks
+in APPPATH/Views/admin/main_page.php on line 28.
+ 1 APPPATH/Views/admin/main_page.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: laiks', 'APPPATH/Views/admin/main_page.php', 28, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/main_page.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main_page', [], true)
+ 5 APPPATH/Controllers/Admin.php(56): view('admin/main_page', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 18:33:16 --> mysqli_sql_exception: Unknown column 'meistari.vards' in 'field list' in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `meistar...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `meistar...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `meistar...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `meistar...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-23 18:33:16 --> Unknown column 'meistari.vards' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `meistari`.`vards`, `meistari`.`uzvards`
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+JOIN `frizetavas` ON `frizetavas`.`id` = `meistari`.`adrese`
+WHERE `pieteikumi`.`pieteikuma_id` = 91', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `meistari`.`vards`, `meistari`.`uzvards`
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+JOIN `frizetavas` ON `frizetavas`.`id` = `meistari`.`adrese`
+WHERE `pieteikumi`.`pieteikuma_id` = 91')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `meistari`.`vards`, `meistari`.`uzvards`
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+JOIN `frizetavas` ON `frizetavas`.`id` = `meistari`.`adrese`
+WHERE `pieteikumi`.`pieteikuma_id` = 91')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `meistari`.`vards`, `meistari`.`uzvards`
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+JOIN `frizetavas` ON `frizetavas`.`id` = `meistari`.`adrese`
+WHERE `pieteikumi`.`pieteikuma_id` = :pieteikumi.pieteikuma_id:', [...], false)
+ 5 APPPATH/Controllers/Home.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->putApplication()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

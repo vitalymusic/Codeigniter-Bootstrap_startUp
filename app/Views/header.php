@@ -11,7 +11,7 @@
     <style>
         .clientForm{
             /* margin:15px; */
-            border: 1px solid rgba(var(--bs-primary-rgb));
+            border: 1px solid #EE2025;
             border-radius:20px;
             margin-bottom:30px;
         }
@@ -26,11 +26,34 @@
         .navbar-brand img{
             filter:invert(100%)
         }
+        .navbar {
+            background:#EE2025 !important; 
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.232);
+        }
+        h1{
+            color:#EE2025 !important;
+            /* text-shadow:0px 0px 5px rgba(0, 0, 0, 0.426); */
+        }
         .invalid-feedback{
             padding-left:1em;
         }
         
+        .fab, .fa-brands{
+            color: #EE2025 !important;
+            filter:opacity(.65);
+        }
         
+        .fab:hover, .fa-brands:hover{
+            filter:opacity(1);
+        }
+        .rsmt_red{
+            color: #EE2025 !important;
+        }
+
+        .form-select:focus, .form-control:focus{
+            border-color: rgba(255,0,0,0.5);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.3);
+        }
         @media screen and (min-width:1200px) {
             .main_screen{
             min-height:calc(100vh - 145px - 90px) !important;

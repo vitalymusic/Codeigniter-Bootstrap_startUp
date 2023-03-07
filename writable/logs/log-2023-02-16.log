@@ -1,0 +1,287 @@
+CRITICAL - 2023-02-16 08:49:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 08:53:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 08:54:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 08:56:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 08:57:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:00:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:05:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:06:13 --> Call to undefined function App\Controllers\get()
+in APPPATH/Controllers/Admin.php on line 111.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:10:34 --> Undefined variable: login
+in APPPATH/Controllers/Admin.php on line 129.
+ 1 APPPATH/Controllers/Admin.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: login', 'APPPATH/Controllers/Admin.php', 129, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:17:35 --> Undefined variable: session
+in APPPATH/Controllers/Admin.php on line 136.
+ 1 APPPATH/Controllers/Admin.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Admin.php', 136, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:18:15 --> Undefined variable: session
+in APPPATH/Controllers/Admin.php on line 137.
+ 1 APPPATH/Controllers/Admin.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Admin.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:18:51 --> Undefined variable: session
+in APPPATH/Controllers/Admin.php on line 137.
+ 1 APPPATH/Controllers/Admin.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Admin.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:25:24 --> Undefined property: CodeIgniter\View\View::$session
+in APPPATH/Views/admin/login_screen.php on line 3.
+ 1 APPPATH/Views/admin/login_screen.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$session', 'APPPATH/Views/admin/login_screen.php', 3, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/login_screen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/login_screen', [], true)
+ 5 APPPATH/Controllers/Admin.php(99): view('admin/login_screen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:31:55 --> Undefined variable: wrong_user
+in APPPATH/Views/admin/login_screen.php on line 29.
+ 1 APPPATH/Views/admin/login_screen.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: wrong_user', 'APPPATH/Views/admin/login_screen.php', 29, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/login_screen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/login_screen', [], true)
+ 5 APPPATH/Controllers/Admin.php(102): view('admin/login_screen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 09:33:46 --> Undefined variable: wrong_user
+in APPPATH/Views/admin/login_screen.php on line 29.
+ 1 APPPATH/Views/admin/login_screen.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: wrong_user', 'APPPATH/Views/admin/login_screen.php', 29, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/login_screen.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/login_screen', [], true)
+ 5 APPPATH/Controllers/Admin.php(103): view('admin/login_screen', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 10:03:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `timestamp` DESC' at line 5 in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Admin.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Admin->index()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-16 10:03:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `timestamp` DESC' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC', [], false)
+ 5 APPPATH/Controllers/Admin.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 10:04:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `timestamp` DESC' at line 5 in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Admin.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Admin->index()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-16 10:04:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `timestamp` DESC' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC', [], false)
+ 5 APPPATH/Controllers/Admin.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 10:04:38 --> Undefined index: id
+in APPPATH/Controllers/Admin.php on line 138.
+ 1 APPPATH/Controllers/Admin.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Admin.php', 138, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 10:05:25 --> Undefined index: id
+in APPPATH/Controllers/Admin.php on line 139.
+ 1 APPPATH/Controllers/Admin.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Admin.php', 139, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 10:05:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `timestamp` DESC' at line 5 in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Admin.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Admin->index()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-16 10:05:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+ORDER BY `timestamp` DESC' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pieteikumi`
+JOIN `meistari` ON `meistari`.`id` = `pieteikumi`.`meistara_id`
+JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`
+WHERE `meistari`. IS NULL
+ORDER BY `timestamp` DESC', [], false)
+ 5 APPPATH/Controllers/Admin.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 10:09:10 --> Undefined index: id
+in APPPATH/Controllers/Admin.php on line 134.
+ 1 APPPATH/Controllers/Admin.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Admin.php', 134, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 10:09:26 --> Trying to access array offset on value of type bool
+in APPPATH/Controllers/Admin.php on line 134.
+ 1 APPPATH/Controllers/Admin.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type bool', 'APPPATH/Controllers/Admin.php', 134, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 10:11:20 --> Undefined index: admin
+in APPPATH/Controllers/Admin.php on line 134.
+ 1 APPPATH/Controllers/Admin.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: admin', 'APPPATH/Controllers/Admin.php', 134, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,49 @@
+CRITICAL - 2023-03-06 11:13:03 --> Undefined index: admin
+in APPPATH/Views/admin/top_nav.php on line 12.
+ 1 APPPATH/Views/admin/top_nav.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: admin', 'APPPATH/Views/admin/top_nav.php', 12, [...])
+ 2 APPPATH/Views/admin/header.php(64): include('APPPATH/Views/admin/top_nav.php')
+ 3 APPPATH/Views/admin/create_master.php(1): include('APPPATH/Views/admin/header.php')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/create_master.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/create_master', [], true)
+ 7 APPPATH/Controllers/Admin.php(167): view('admin/create_master', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->create_user()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 13:32:26 --> Array to string conversion
+in APPPATH/Controllers/Admin.php on line 188.
+ 1 APPPATH/Controllers/Admin.php(188): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/Controllers/Admin.php', 188, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->save_user()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 13:45:04 --> The route for "http://localhost:8888/skolas_pieteikumi_codeigniter/admin/masters" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8888/skolas_pieteikumi_codeigniter/admin/masters')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Admin.php(203): redirect('http://localhost:8888/skolas_pieteikumi_codeigniter/admin/masters')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->save_user()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 14:34:45 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/Admin.php on line 229.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Admin.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 14:35:04 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Controllers/Admin.php on line 228.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Admin.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

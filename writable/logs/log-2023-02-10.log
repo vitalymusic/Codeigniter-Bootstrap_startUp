@@ -1,0 +1,115 @@
+ERROR - 2023-02-10 08:20:41 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-10 08:20:41 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-10 08:20:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-10 08:20:46 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 
+ERROR - 2023-02-10 09:29:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-10 09:29:55 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-10 09:31:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-10 09:31:49 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-10 09:31:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-10 09:31:54 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 
+CRITICAL - 2023-02-10 09:43:30 --> Call to undefined function App\Controllers\sha256()
+in APPPATH/Controllers/Admin.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

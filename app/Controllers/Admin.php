@@ -9,24 +9,43 @@ class Admin extends BaseController
     function __construct(){
         $this->appName = "RSMT pakalpojumu sistēma";
         $this->db = \Config\Database::connect();
-        $this->email = \Config\Services::email();
-        $config['protocol'] = 'smtp';
-        $config['SMTPHost'] = 'mail.inbox.lv';
-        $config['SMTPUser'] = 'vitaly.music@inbox.lv';
-        $config['SMTPPass'] = 'PVBrtH66p?';
-        $config['SMTPPort'] = '587';
-        $config['mailType'] = 'html';
-        $config['charset']  = 'utf-8';
-        $config['wordWrap'] = true;
+        // $this->email = \Config\Services::email();
+        // $config['protocol'] = 'smtp';
+        // $config['SMTPHost'] = 'mail.inbox.lv';
+        // $config['SMTPUser'] = 'vitaly.music@inbox.lv';
+        // $config['SMTPPass'] = 'PVBrtH66p?';
+        // $config['SMTPPort'] = '587';
+        // $config['mailType'] = 'html';
+        // $config['charset']  = 'utf-8';
+        // $config['wordWrap'] = true;
 
-        $this->email->initialize($config);
+        // $this->email->initialize($config);
         //$this->builder = $db->table('users');
+
+        $this->session = \Config\Services::session();
+    }
+
+
+    public function checkSession(){
+        if( !($this->session->logged_in==true && isset($this->session->username))){
+            $this->session->destroy();
+            return false;
+        } else{
+            return true;
+        } 
     }
     public function index()
     {
+        if(!$this->checkSession()){
+            return redirect()->to('/login');
+        };
+
         $builder = $this->db->table('pieteikumi');
         $builder->join('meistari', 'meistari.id = pieteikumi.meistara_id');
         $builder->join('pakalpojumi', 'pakalpojumi.id = pieteikumi.pakalpojuma_id');
+        if(!$this->session->admin){
+            $builder->where('meistari.id',$this->session->user_id);
+        }
         $query   = $builder->orderBy('`timestamp`', 'DESC')->get();
         $data = [
             "active_menu"=>1,
@@ -39,8 +58,12 @@ class Admin extends BaseController
 
 
     public function users(){
+        // Meistaru saraksts
+        if(!$this->checkSession()){
+            return redirect()->to('/login');
+        };
         $builder = $this->db->table('meistari');
-        $builder->join('pakalpojumi', 'pakalpojumi.id = meistari.pakalpojuma_id');     
+        // $builder->join('meistari_pakalpojumi', 'meistari_pakalpojumi.meistars_id = meistari.id','inner')->join('pakalpojumi','meistari_pakalpojumi.Pakalpojumi_id = pakalpojumi.id','inner');     
         $query   = $builder->get();
         $data = [
             "active_menu"=>2,
@@ -50,102 +73,156 @@ class Admin extends BaseController
         ];
         return view('admin/masters_page',$data);
     }
-    
 
-
-    public function get_services(){
-        $builder = $this->db->table('pakalpojumi');
-        $query   = $builder->orderBy('pakalpojums', 'ASC')->get();
-        $data = $query->getResultArray();
-        return $this->response->setJSON($data);
-    }
-
-
-    public function get_masters($id,$weekDay){
-        $builder = $this->db->table("meistari");
-        $query   = $builder->where("pakalpojuma_id",$id)->like("pieejamas_dienas",$weekDay)->get();
-        $data = $query->getResultArray();
-        //return $id;
-        //return $weekDay;
-        return $this->response->setJSON($data);
-    }
-
-    public function get_masters_time($id){
-        $builder = $this->db->table("meistari");
-        $builder->select('pieejamas_stundas')->where("id",$id);
-        $query = $builder->get();
-        $data = $query->getResultArray();
-        return $this->response->setJSON($data);
-    }
-
-
-    function putApplication(){
-        $builder = $this->db->table("pieteikumi");
-        $data = [
-            "klienta_vards"=>$this->request->getPost("client_name"),
-            "klienta_uzvards"=>$this->request->getPost("client_surname"),
-            "klienta_talrunis"=>$this->request->getPost("client_phone"),
-            "klienta_epasts"=>$this->request->getPost("client_email"),
-            "pakalpojuma_id"=>$this->request->getPost("service_select"),
-            "meistara_id"=>$this->request->getPost("master_select"),
-            "laiks"=>$this->request->getPost("time_select"),
-            "datums"=>$this->request->getPost("service_date"),
-        ];
-        if($builder->insert($data)){
-            $currId = $this->db->insertID();
-            $builder = $this->db->table("pieteikumi");
-            $builder->join('meistari', 'meistari.id = pieteikumi.meistara_id');
-            $builder->join('pakalpojumi', 'pakalpojumi.id = pieteikumi.pakalpojuma_id');
-            $query = $builder->where("pieteikumi.pieteikuma_id",$currId)->get();
-            $data = $query->getResultArray();
-            //var_dump($data[0]);
-            $this->notify_master_email($data[0]);
-            $this->notify_client_email($data[0]);
-            return $this->response->setJSON($data);
+    public function services(){
+        // Pakalpojumu saraksts
+        if(!$this->checkSession()){
+            return redirect()->to('/login');
         };
+        $builder = $this->db->table('pakalpojumi');
+           
+        $query   = $builder->get();
+        $data = [
+            "active_menu"=>3,
+            "subtitle"=>"Pakalpojumu saraksts",
+            "title" =>$this->appName,
+            "pakalpojumi"=>$query->getResultArray()
+        ];
+        return view('admin/services_page',$data);
+    }
+    
+    public function login(){
+        // Ielogotišanas lapa
+        $data = [
+            "subtitle"=>"Pakalpojumu saraksts",
+            "title" =>$this->appName,
+            "active_menu"=>NULL,
+            "errors" => NULL,
+            
+        ];
+        if($this->session->has('wrong_user')){
+            $data["wrong_user"] = true;
+        };
+        return view('admin/login_screen',$data);
     }
 
-    public function deleteApp($id){
-        $builder = $this->db->table("pieteikumi");
-        $builder->where('pieteikumi.pieteikuma_id', $id);
-        if($builder->delete()){
-            $data["text"] = "Pieteikums ir izdzēsts";
-            return view('deleted_app.php',$data);
+    public function logout(){
+        // Izlogošanās lapa
+        $this->session->destroy();
+        return redirect()->to('/login');
+    }
+
+    public function checkUser($login, $password){
+        //return var_dump($login, $password);
+        // $adminUser = "vitalijs.korabelnikovs";
+        // $adminPassword = "SkolasAdministrators";
+        // if($login==$adminUser && $adminPassword == $password){
+        //     return true;
+        // }
+
+        $builder = $this->db->table('meistari');
+        $data = ['meistara_epasts'=>$login,'password'=>$password];
+        $query   = $builder->where($data)->get();
+        if($result = $query->getResultArray()){
+            return $result;
         }else{
-            $data["text"] = "Šis pieteikums vairs neeksistē";
-            return view('deleted_app.php',$data);
+            return false;
         }
+        // return  var_dump($result);
         
-       
+        
+    }
+    public function authorize(){
+        // Autorizē lietotāju
+        $login = $this->request->getPost('username');
+        $pass = sha1($this->request->getPost('password'));
+        // return var_dump($login, $pass);
+        $log_user = $this->checkUser($login,$pass);
+        // return var_dump($log_user[0]["admin_user"]);
+        if($log_user){
+            $session_data = [
+                'logged_in'=>true,
+                'admin'=>$log_user[0]["admin_user"],
+                'user_id'=>$log_user[0]["id"],
+                'username'=>$log_user[0]["meistara_epasts"]
+            ];
+            $this->session->set($session_data);
+            $this->session->remove('wrong_user');
+            return redirect()->to('/admin');
+        }
+        else{
+            $this->session->remove('logged_in');
+            // $this->session->start();
+            $this->session->set('wrong_user', 'true');
+            return redirect()->to('/login');
+        }  
+        
+    }
+    public function create_user(){
+        if(!$this->checkSession()){
+            return redirect()->to('/login');
+        };
+
+
+        $data = [
+            "active_menu"=>3,
+            "subtitle"=>"Jauns lietotājs",
+            "title" =>$this->appName,
+        ];
+        return view('admin/create_master',$data);
+    }
+    public function edit_user($userId){
+
+        if(!$this->checkSession()){
+            return redirect()->to('/login');
+        };
+        $data = [
+            "active_menu"=>3,
+            "subtitle"=>"Rediģēt lietotāju",
+            "title" =>$this->appName,
+        ];
+        return view('admin/edit_master',$data);
     }
 
-    public function notify_master_email($data){
-        
+    public function save_user(){
+    $data = [
+        "meistara_vards" => $this->request->getPost('users_name'),
+        "meistara_uzvards" => $this->request->getPost('users_surname'),
+        "meistara_talr" => $this->request->getPost('users_phone'),
+        "meistara_epasts" => $this->request->getPost('users_email'),
+        "adrese" => $this->request->getPost('place'),
+        "pieejamas_dienas" => $this->request->getPost('working_days')
+    ];
 
-        $this->email->setFrom('vitaly.music@inbox.lv', 'RSMT pakalpojumu rezervēšanas lapa');
-        //$this->email->setTo($data['meistara_epasts']);
-        $this->email->setTo('vitaly.music@inbox.lv'); //testēšanai
-
-        //$email->setCC($data['klienta_epasts']);
-        //$email->setBCC('them@their-example.com');
+    $builder = $this->db->table('meistari');
+    if($builder->insert($data)){
+        return "success";
         
-        $this->email->setSubject('Pieteikums pakalpojumam');
-        $email_template = view('master_email.php',$data);
-        $this->email->setMessage($email_template);
-        $this->email->send();
+    };
+
+    }
+    public function delete_user($userId){
+        $builder = $this->db->table('meistari');
+        $builder->where('id', $userId);
+        if($builder->delete()){
+            return "success";
+    };
+    }
+    public function setPassword_user($userId){
+        
+        if(!$this->checkSession()){
+            return redirect()->to('/login');
+        };
+        $builder = $this->db->table('meistari');
+        $query = $builder->where('id', $userId)->get();
+        // $user = ;
+        $data = [
+            "active_menu"=>3,
+            "subtitle"=>"Iestatīt paroli",
+            "title" =>$this->appName,
+        ];
+        return view('admin/create_masters_password',$data);
     }
 
-    public function notify_client_email($data){
-        
 
-        $this->email->setFrom('vitaly.music@inbox.lv', 'RSMT pakalpojumu rezervēšanas lapa');
-        $this->email->setTo($data['klienta_epasts']);
-        //$email->setCC($data['klienta_epasts']);
-        //$email->setBCC('them@their-example.com');
-        
-        $this->email->setSubject('Jūsu pieteikums pakalpojumam');
-        $email_template = view('client_email.php',$data);
-        $this->email->setMessage($email_template);
-        $this->email->send();
-    }
 }

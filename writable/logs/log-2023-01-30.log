@@ -1,0 +1,116 @@
+ERROR - 2023-01-30 11:11:41 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'rsmt_pakalpojum...', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-30 11:11:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 3 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-30 11:12:01 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', 'root', 'rsmt_pakalpojum...', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-30 11:12:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 3 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-30 11:14:41 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-01-30 11:14:41 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-01-30 11:14:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-01-30 11:14:46 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 

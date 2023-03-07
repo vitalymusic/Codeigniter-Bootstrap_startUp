@@ -1,0 +1,20 @@
+CRITICAL - 2023-02-15 18:56:02 --> Call to undefined function App\Controllers\checkUser()
+in APPPATH/Controllers/Admin.php on line 122.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-15 19:10:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-15 19:10:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(123): App\Controllers\Admin->checkUser('kristine.vindela@rsmt.lv', 'ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->authorize()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

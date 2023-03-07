@@ -1,0 +1,527 @@
+ERROR - 2023-01-25 00:54:37 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:54:37 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:54:43 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:54:43 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:54:44 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:54:44 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:54:44 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:54:44 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:54:44 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:54:44 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:54:45 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:54:45 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:55:03 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:55:03 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:55:04 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:55:04 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:55:14 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:55:14 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:55:34 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:55:34 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:55:34 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:55:34 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:55:35 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:55:35 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 00:55:41 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 00:55:41 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 01:02:58 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 01:02:58 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 01:16:25 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 01:16:25 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 12:52:28 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 12:52:28 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-25 14:25:35 --> mysqli_sql_exception: Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist in /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/app/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(927): App\Controllers\Home->get_services()
+#6 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/skolas_pieteikumi_codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-25 14:25:35 --> Table 'rsmt_pakalpojumi.pakalpojumi' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pakalpojumi`
+ORDER BY `pakalpojums` ASC', [], false)
+ 5 APPPATH/Controllers/Home.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

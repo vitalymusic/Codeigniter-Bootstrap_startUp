@@ -1,0 +1,200 @@
+ERROR - 2023-02-24 09:19:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:19:54 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-24 09:19:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:19:59 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 
+ERROR - 2023-02-24 09:20:04 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:20:04 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-24 09:20:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:20:09 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 
+ERROR - 2023-02-24 09:31:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:31:08 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-24 09:31:13 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:31:13 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 
+ERROR - 2023-02-24 09:39:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:39:47 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+ERROR - 2023-02-24 09:39:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-24 09:39:52 --> 220 mail.inbox.lv relay for customers ESMTP ready
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 STARTTLS
+
+starttls: 220 2.0.0 Start TLS
+
+hello: 250-mail.inbox.lv relay for customers
+250-SIZE 59900000
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 AUTH PLAIN LOGIN
+
+Failed to authenticate password. Error: 535 5.7.0 Invalid login or password
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 
+CRITICAL - 2023-02-24 09:52:00 --> Undefined variable: id
+in APPPATH/Views/admin/main_page.php on line 35.
+ 1 APPPATH/Views/admin/main_page.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/admin/main_page.php', 35, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/main_page.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main_page', [], true)
+ 5 APPPATH/Controllers/Admin.php(56): view('admin/main_page', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 10:37:32 --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP)
+in APPPATH/Views/admin/admin_scripts.php on line 6.
+ 1 APPPATH/Views/admin/admin_scripts.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant base_url - assumed \'base_url\' (this will throw an Error in a future version of PHP)', 'APPPATH/Views/admin/admin_scripts.php', 6, [...])
+ 2 APPPATH/Views/admin/footer.php(61): include('APPPATH/Views/admin/admin_scripts.php')
+ 3 APPPATH/Views/admin/main_page.php(49): include('APPPATH/Views/admin/footer.php')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/main_page.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main_page', [], true)
+ 7 APPPATH/Controllers/Admin.php(56): view('admin/main_page', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -6,15 +6,14 @@
 
 ?>
 
-<div class="container">
+<div class="container main_screen">
     <table class="table table-striped">
         <tr>
             <td>Vārds uzvārds</td>
             <td>Tālrunis</td>
             <td>Epasts</td>
-            <td>Pakalpojums</td>
+           
             <td>Darba dienas</td>
-            <td>Darba laiks</td>
             <td>Darbības</td>
         </tr>
         <?php foreach($meistari as $item): ?>
@@ -22,14 +21,14 @@
                 <td><?=$item["meistara_vards"]?> <?=$item["meistara_uzvards"]?></td>
                 <td><?=$item["meistara_talr"]?></td>
                 <td><?=$item["meistara_epasts"]?></td>
-                <td><?=$item["pakalpojums"]?></td>
+                
                 <td><?=$item["pieejamas_dienas"]?></td>
-                <td><?=$item["pieejamas_stundas"]?></td>
                 <td>
-                    <button type="button" class="btn btn-outline-primary btn-sm editBtn">
-                        Rediģēt</button>
-                        <button type="button" class="btn btn-outline-danger btn-sm deleteBtn">Izdzēst</button>
-
+                <div class="buttons">
+                    <button type="button" class="btn btn-outline-primary btn-sm editUsersBtn" data-user_id="<?=$item["id"]?>">Rediģēt</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm setPasswordBtn" data-user_id="<?=$item["id"]?>">Iestatīt paroli</button>
+                    <button type="button" class="btn btn-outline-danger btn-sm deleteUsersBtn" data-user_id="<?=$item["id"]?>">Izdzēst</button>
+                 </div>    
                 </td>
 
            </tr>     
@@ -37,7 +36,7 @@
         <?php endforeach; ?>    
     </table>
 
-    <button type="button" class="btn btn-primary">+ Pievienot jaunu</button>
+    <button type="button" class="btn btn-danger" onclick="location.href='<?=base_url('admin/create_user')?>'">+ Pievienot jaunu</button>
 </div>
 
 

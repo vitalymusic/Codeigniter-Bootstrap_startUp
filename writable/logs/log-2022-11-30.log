@@ -54,3 +54,27 @@ JOIN `pakalpojumi` ON `pakalpojumi`.`id` = `pieteikumi`.`pakalpojuma_id`', [], f
  8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-30 12:04:06 --> Undefined variable $meistari
+in APPPATH/Views/admin/services_page.php on line 20.
+ 1 APPPATH/Views/admin/services_page.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meistari', 'APPPATH/Views/admin/services_page.php', 20)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/services_page.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/services_page', [], true)
+ 5 APPPATH/Controllers/Admin.php(64): view('admin/services_page', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-30 12:23:24 --> Undefined variable $meistari
+in APPPATH/Views/admin/services_page.php on line 16.
+ 1 APPPATH/Views/admin/services_page.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $meistari', 'APPPATH/Views/admin/services_page.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/services_page.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/services_page', [], true)
+ 5 APPPATH/Controllers/Admin.php(64): view('admin/services_page', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->services()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

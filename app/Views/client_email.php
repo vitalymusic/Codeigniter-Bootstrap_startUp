@@ -40,11 +40,11 @@
                      <h3>Labdien. Jūs esiet pieteikušies RSMT pakalpojumam</h3>
             </div>
             <div class="content_body">
-               <h5 class="bold">
+               <h3 class="bold">
                         Pakalpojuma detaļas:
-                </h5>
+                </h3>
                 <p>
-                    Pakalpojuma sniegšanas datums un laiks: <b><?=$datums?> <?=$laiks?>:00</b>
+                    Pakalpojuma sniegšanas datums: <b><?=$datums?></b>
                 </p>
                 <p>
                     Meistars: <b><?=$meistara_vards?> <?=$meistara_uzvards?></b>
@@ -56,9 +56,12 @@
                 </p>
 
                 <p>
-                    Pakalpojuma sniegšanas vieta: <b><?=$adrese?></b>
+                    Pakalpojuma sniegšanas vieta: <b>Salons "<?=$nosaukums?>"<?=$adrese?></b>
+                    
                 </p>
-
+                <p>
+                    Mūsu administrātors sazināsies ar jums lai precizētu pakalpojuma laiku.
+                </p>
                 
                 
             </div>
@@ -66,7 +69,7 @@
     </div>
     <div class="message_footer" style="background-color: #2596be;color:#fff">
 
-            Ja nesanāk ieraksties uz noteikto laiku lūdzam atcelt rezervējumu nospiežot uz saites: <a href="<?php echo base_url() . "/deleteApp/" . $pieteikuma_id?>">Atcelt reģistrāciju</a>
+            Ja nesanāk ieraksties lūdzam atcelt rezervējumu nospiežot uz saites: <a href="<?php echo base_url() . "/deleteApp/" . $pieteikuma_id?>">Atcelt reģistrāciju</a>
     </div>
 </body>
 </html>

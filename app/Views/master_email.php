@@ -36,7 +36,7 @@
                         Klienta dati:
                 </h5>
                 <p>
-                    Pakalpojuma sniegšanas datums un laiks: <b><?=$datums?> <?=$laiks?>:00</b>
+                    Pakalpojuma sniegšanas datums: <b><?=$datums?></b>
                 </p>
                 <p>
                     Klienta vārds: <b><?=$klienta_vards?></b>

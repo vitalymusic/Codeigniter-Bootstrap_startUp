@@ -10,6 +10,7 @@
     <link rel="icon" href="https://rsmt.lv/wp-content/uploads/2022/02/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <style>
        
         a{
@@ -20,7 +21,43 @@
             flex-direction:row;
             justify-content:space-around;
         }
+        .table{
+            margin-bottom:30px;
+        }
+        .buttons{
+            display:flex;
+        }
+        .buttons button{
+            display:block;
+            margin:10px;
+        }
+        tr:nth-child(1){
+            text-align:center;
+        }
+        .navbar{
+            position:sticky;
+            top:0px
+        }
+        .fab, .fa-brands{
+            color: #EE2025 !important;
+            filter:opacity(.65);
+        }
         
+        .fab:hover, .fa-brands:hover{
+            filter:opacity(1);
+        }
+        .form-select:focus, .form-control:focus{
+            border-color: rgba(255,0,0,0.5);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.3);
+        }
+        footer{
+            margin-top:20px;
+        }
+        @media screen and (min-width:1200px) {
+            .main_screen{
+            min-height:calc(100vh - 145px - 90px) !important;
+        }
+    }
     </style>
 </head>
 <body>

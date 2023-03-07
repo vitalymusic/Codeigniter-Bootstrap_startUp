@@ -13,15 +13,9 @@
             </div>  
         </div>
         <div class="col-md-3 step2">
-        <p class="text-center">2. Izvēlies datumu</p>
+        <p class="text-center">2. Izvēlies vietu</p>
             <div class="form-group">
-            <input type="date" name="service_date" id="" class="form-control">
-            </div>  
-        </div>
-        <div class="col-md-3 step3">
-        <p class="text-center">3. Izvēlies meistaru</p>
-            <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="master_select">
+            <select class="form-select" aria-label="Default select example" name="address_select">
                 <option selected>Open this select menu</option>
                 <option value="1">Meistars 1</option>
                 <option value="2">Meistars 2</option>
@@ -29,15 +23,23 @@
             </select>
             </div>  
         </div>
+       
+        <div class="col-md-3 step3">
+        <p class="text-center">3. Izvēlies datumu</p>
+            <div class="form-group">
+            <input type="date" name="service_date" id="" class="form-control">
+            </div>  
+        </div>
       
         <div class="col-md-3 step4">
-        <p class="text-center">4. Izvēlies pieejamo laiku</p>
+        <p class="text-center">4. Izvēlies meistaru</p>
             <div class="form-group">
-            <select class="form-select" name="time_select">
+            <select class="form-select" name="master_select">
                 
             </select>
             </div>  
         </div>
+        
        
     </div>
     <div class="row justify-content-md-center">
@@ -74,7 +76,7 @@
                 </div>
             </div>
             <div class="form-group text-center mt-5 mb-5">
-                    <button type="submit" class="btn btn-primary ">Pieteikties pakalpojumam</button>
+                    <button type="submit" class="btn btn-danger ">Pieteikties pakalpojumam</button>
             </div>
             </div>
         </div>
