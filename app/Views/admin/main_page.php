@@ -20,6 +20,7 @@ function dateFormat($mysqldate){
             <td>Klienta tālrunis</td>
             <td>Klienta epasts</td>
             <td>Pakalpojums</td>
+            <td>Meistars</td>
             <td>Darbības</td>
         </tr>
         <?php foreach($pasutijumi as $item): ?>
@@ -27,9 +28,11 @@ function dateFormat($mysqldate){
                 <td><?=dateFormat($item["datums"])?></td>
                 
                 <td><?=$item["klienta_vards"]?> <?=$item["klienta_uzvards"]?></td>
-                <td><?=$item["klienta_talrunis"]?></td>
-                <td><?=$item["klienta_epasts"]?></td>
+                <td class="text-center"><?=$item["klienta_talrunis"]?></td>
+                <td class="text-center"><?=$item["klienta_epasts"]?></td>
+                
                 <td><?=$item["pakalpojums"]?></td>
+                <td class="text-center"><?=substr($item["meistara_vards"],0,1)?>.<?=$item["meistara_uzvards"]?></td>
                 <td>
                     <div class="buttons">
                         <!-- <button type="button" class="btn btn-outline-primary btn-sm" data-id="<?//=$item["pieteikuma_id"]?>">

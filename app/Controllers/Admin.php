@@ -213,6 +213,8 @@ class Admin extends BaseController
         if(!$this->checkSession()){
             return redirect()->to('/login');
         };
+
+
         $builder = $this->db->table('meistari');
         $query = $builder->where('id', $userId)->get();
         // $user = ;
@@ -220,8 +222,25 @@ class Admin extends BaseController
             "active_menu"=>3,
             "subtitle"=>"Iestatīt paroli",
             "title" =>$this->appName,
+            "user" => $query->getRow()
         ];
         return view('admin/create_masters_password',$data);
+    }
+    public function updateUserPassword($userId){
+        if(!$this->checkSession()){
+            return redirect()->to('/login');
+        };
+        $builder = $this->db->table('meistari');
+        $data = [
+            "password"=>sha1($this->request->getPost('password')),
+        ];
+        $builder->set($data);
+        $builder->where('id', $userId);
+        if($builder->update()){
+                return "success";
+        }
+        
+
     }
 
 

@@ -43,6 +43,7 @@ $routes->get('/admin/create_user', 'Admin::create_user');
 $routes->get('/admin/edit_user/(:num)', 'Admin::edit_user/$1');
 $routes->get('/admin/delete_user/(:num)', 'Admin::delete_user/$1');
 $routes->get('/admin/set_password/(:num)', 'Admin::setPassword_user/$1');
+$routes->post('/admin/updateUserPassword/(:num)', 'Admin::updateUserPassword/$1');
 
 $routes->post('/admin/save_user', 'Admin::save_user');
 $routes->get('/login', 'Admin::login');

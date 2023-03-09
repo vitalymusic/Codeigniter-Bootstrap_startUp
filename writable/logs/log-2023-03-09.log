@@ -1,0 +1,40 @@
+CRITICAL - 2023-03-09 10:20:30 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/create_masters_password.php on line 2.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/create_masters_password', [], true)
+ 4 APPPATH/Controllers/Admin.php(227): view('admin/create_masters_password', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->setPassword_user('6')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-09 10:20:46 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/create_masters_password.php on line 2.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/create_masters_password', [], true)
+ 4 APPPATH/Controllers/Admin.php(227): view('admin/create_masters_password', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->setPassword_user('6')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-09 11:05:04 --> Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)
+in APPPATH/Views/admin/create_masters_password.php on line 29.
+ 1 APPPATH/Views/admin/create_masters_password.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant id - assumed \'id\' (this will throw an Error in a future version of PHP)', 'APPPATH/Views/admin/create_masters_password.php', 29, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/create_masters_password.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/create_masters_password', [], true)
+ 5 APPPATH/Controllers/Admin.php(227): view('admin/create_masters_password', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->setPassword_user('6')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-09 11:52:33 --> syntax error, unexpected '?>', expecting ')'
+in APPPATH/Views/admin/main_page.php on line 35.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main_page', [], true)
+ 3 APPPATH/Controllers/Admin.php(56): view('admin/main_page', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
